@@ -1,0 +1,208 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+  font-family: 'Monserrat', sans-serif;
+  color: white;
+}
+
+header,section,footer{
+ overflow:auto;
+}
+
+header#masthead{
+ background:#ccc;
+}
+
+footer#footer{
+ background-color: #333;
+ height: 200px;
+}
+
+footer#footer p {
+  margin: 30px 0 0 0;
+}
+
+input, textarea {
+  font-weight: bold;
+}
+
+.form-text {
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: lighter;
+  margin: 75px 0 35px 0;
+}
+
+#section-five {
+  color: #444;
+}
+
+#section-five h4, h5{
+  font-weight: bold;
+}
+
+#section-seven h5 {
+  color: #555;
+}
+
+.paragraph-one {
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: lighter;
+  margin: 149px 0 149px 0;
+  padding: 0 0 0 25px;
+}
+
+.paragraph-two {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+  margin: 64px 0 64px 0;
+  padding: 0 0 0 25px;
+}
+
+.paragraph-three {
+  font-size: 22px;
+  line-height: 27px;
+  margin: 0px 0 12px 0;
+}
+
+.paragraph-four {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 23px;
+  background: url(../images/bazoon_w_logo.svg);
+  background-size: 200px 23px;
+}
+
+.second-logo {
+  display: block;
+  width: 225px;
+  height: 40px;
+  background: url(../images/bazoon_w_logo.svg);
+  background-size: 225px 40px;
+  margin: 90px 0 0 0;
+}
+
+.node-logo {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background:url(../images/logo_node.svg);
+  background-size: 150px 50px;
+}
+
+.postgres-logo {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background:url(../images/postgresql-logo.png);
+  background-size: 150px 50px;
+}
+
+.php-logo {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background:url(../images/logo_php.svg);
+  background-size: 150px 50px;
+}
+
+.python-logo {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background:url(../images/Logo_python.svg);
+  background-size: 150px 50px;
+}
+
+.rabbitmq-logo {
+  display: block;
+  width: 150px;
+  height: 20px;
+  background:url(../images/rabbitmq_logo.png);
+  background-repeat: none;
+  background-size: 150px 20px;
+}
+
+.redis-logo {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background:url(../images/logo_redis.svg);
+  background-size: 150px 50px;
+}
+
+.django-logo {
+  display: block;
+  width: 150px;
+  height: 25px;
+  background:url(../images/django-logo-positive.svg);
+  background-size: 150px 25px;
+}
+
+.strategy-graph {
+  display: block;
+  width: 170px;
+  height: 170px;
+  background: url(../images/Icon_Strategy.svg);
+  background-size: 170px 170px;
+}
+
+.design-graph {
+  display: block;
+  width: 170px;
+  height: 170px;
+  background: url(../images/Icon_Design.svg);
+  background-size: 170px 170px;
+}
+
+.development-graph {
+  display: block;
+  width: 170px;
+  height: 170px;
+  background: url(../images/Icon_Development.svg);
+  background-size: 170px 170px;
+}
+
+.our-approach-graph {
+  display: block;
+  width: 591px;
+  height: 494px;
+  background: url(../images/Chart_OurApproach.svg);
+  background-size: 591px 494px;
+}
+
+.gradient {
+  background-image:
+    linear-gradient(
+      to right,
+      #2C3351, #227188
+    );
+}
+
+.green-block {
+  background-color: #16B19E;
+}
+
+.black-block {
+ background-color: #333333;
+
+}
+
+.black {
+  background-color: black;
+}
+
+.blue-block {
+ background-image:
+    linear-gradient(
+      to right,
+      #2367AE, #3A9EE0
+    );
+}
