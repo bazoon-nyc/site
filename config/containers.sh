@@ -13,7 +13,7 @@ ROOTDIR=`dirname $CONFDIR`
 
 # Set image versions.
 VER_BASE="latest"
-VER_SITE="latest"
+VER_BACKEND="latest"
 VER_WEBSERVER="latest"
 
 
@@ -30,11 +30,11 @@ bn_build_base() {
     build $NAME $VERSION $FROM_IMAGE
 }
 
-# Site image.
-bn_build_site() {
+# Backend image.
+bn_build_backend() {
     FROM_IMAGE=$PROJECTNAME-base
-    NAME=$PROJECTNAME-site
-    VERSION=$VER_SITE
+    NAME=$PROJECTNAME-backend
+    VERSION=$VER_BACKEND
 
     build $NAME $VERSION $FROM_IMAGE
 }
@@ -72,9 +72,9 @@ bn_run_postgres() {
     docker run --name $NAME -e POSTGRES_PASSWORD=postgres -d postgres
 }
 
-# Create site container.
-bn_run_site() {
-    NAME=$PROJECTNAME-site
+# Create backend container.
+bn_run_backend() {
+    NAME=$PROJECTNAME-backend
 
     mkdir -p $ROOTDIR/logs
 
@@ -88,7 +88,7 @@ bn_run_site() {
         -d \
         -i \
         -t \
-        $REGISTRY/$PROJECTNAME-site:$VER_SITE
+        $REGISTRY/$PROJECTNAME-backend:$VER_BACKEND
 }
 
 # Create the nginx container to proxy TCP
@@ -99,8 +99,8 @@ bn_run_webserver() {
     NAME=$PROJECTNAME-webserver
 
     docker run \
-        --link $PROJECTNAME-site:backend \
-        --volumes-from $PROJECTNAME-site \
+        --link $PROJECTNAME-backend:backend \
+        --volumes-from $PROJECTNAME-backend \
         --name $NAME \
         -p 80:80 \
         -d \
@@ -130,7 +130,7 @@ build() {
 stop_remove_all() {
     stop_remove $PROJECTNAME-base
 
-    stop_remove $PROJECTNAME-site
+    stop_remove $PROJECTNAME-backend
     stop_remove $PROJECTNAME-postgres
     stop_remove $PROJECTNAME-webserver
 }

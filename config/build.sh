@@ -7,6 +7,6 @@ source $SCRIPTPATH/utils.sh
 
 bn_build_base
 
-bn_build_site
+bn_build_backend
 
 bn_build_webserver
