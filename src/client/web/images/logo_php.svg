@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="102px" height="55px" viewBox="0 0 102 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_php</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="25.5273232%" cy="4.62090951%" fx="25.5273232%" fy="4.62090951%" r="50%" id="radialGradient-1">
+            <stop stop-color="#DDDCE9" offset="0%"></stop>
+            <stop stop-color="#5664A3" offset="37%"></stop>
+            <stop stop-color="#000000" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Homepage" sketch:type="MSArtboardGroup" transform="translate(-685.000000, -2779.000000)">
+            <g id="Module-5" sketch:type="MSLayerGroup" transform="translate(176.000000, 2721.000000)">
+                <g id="logo_php" transform="translate(510.000000, 59.000000)">
+                    <ellipse id="ellipse3860" stroke="url(#radialGradient-1)" stroke-width="2" fill="#6C7EB7" sketch:type="MSShapeGroup" cx="50" cy="26.0273973" rx="50" ry="26.0273973"></ellipse>
+                    <path d="M14.0410959,41.4383562 L19.5205479,13.6986301 L32.1917808,13.6986301 C37.6712329,14.0410959 40.4109589,16.7808219 40.4109589,21.5753425 C40.4109589,29.7945205 33.9041096,34.5890411 28.0821918,34.2465753 L21.9178082,34.2465753 L20.5479452,41.4383562 L14.0410959,41.4383562 L14.0410959,41.4383562 Z M23.2876712,29.109589 L25,18.8356164 L29.4520548,18.8356164 C31.8493151,18.8356164 33.5616438,19.8630137 33.5616438,21.9178082 C33.2191781,27.739726 30.4794521,28.7671233 27.3972603,29.109589 L23.2876712,29.109589 L23.2876712,29.109589 Z" id="p" stroke="#FFFFFF" stroke-width="0.5" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    <path d="M38.3561644,34.2465753 L43.8356164,6.50684932 L50.3424658,6.50684932 L48.9726027,13.6986301 L55.1369863,13.6986301 C60.6164384,14.0410959 62.6712329,16.7808219 61.9863014,20.2054795 L59.5890411,34.2465753 L52.739726,34.2465753 L55.1369863,21.5753425 C55.4794521,19.8630137 55.4794521,18.8356164 53.0821918,18.8356164 L47.9452055,18.8356164 L44.8630137,34.2465753 L38.3561644,34.2465753 L38.3561644,34.2465753 Z" id="h" stroke="#FFFFFF" stroke-width="0.5" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    <path d="M59.9315068,41.4383562 L65.4109589,13.6986301 L78.0821918,13.6986301 C83.5616438,14.0410959 86.3013699,16.7808219 86.3013699,21.5753425 C86.3013699,29.7945205 79.7945205,34.5890411 73.9726027,34.2465753 L67.8082192,34.2465753 L66.4383562,41.4383562 L59.9315068,41.4383562 L59.9315068,41.4383562 Z M69.1780822,29.109589 L70.890411,18.8356164 L75.3424658,18.8356164 C77.739726,18.8356164 79.4520548,19.8630137 79.4520548,21.9178082 C79.109589,27.739726 76.369863,28.7671233 73.2876712,29.109589 L69.1780822,29.109589 L69.1780822,29.109589 Z" id="p" stroke="#FFFFFF" stroke-width="0.5" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    <g id="p2" transform="translate(59.931507, 13.698630)"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

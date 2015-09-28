@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="150px" height="115px" viewBox="0 0 150 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Development</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Homepage" sketch:type="MSArtboardGroup" transform="translate(-856.000000, -853.000000)">
+            <g id="Module-3" sketch:type="MSLayerGroup" transform="translate(-70.000000, 731.000000)">
+                <g id="Group" transform="translate(235.000000, 94.000000)" sketch:type="MSShapeGroup">
+                    <g id="Icon_Development" transform="translate(682.000000, 0.000000)">
+                        <rect id="Rectangle-27-Copy-2" x="0" y="0" width="170" height="170"></rect>
+                        <path d="M49.9836066,99.0046812 L157.360656,99.0046812 L116.377049,142.377049 L9,142.377049 L49.9836066,99.0046812 Z" id="Rectangle-45" opacity="0.8" fill="#28BCA9"></path>
+                        <path d="M50.8032787,64.2688021 L158.180328,64.2688021 L117.196721,107.64117 L9.81967213,107.64117 L50.8032787,64.2688021 Z" id="Rectangle-45-Copy" opacity="0.8" fill="#28BCA9"></path>
+                        <path d="M51.6229508,28.5329231 L159,28.5329231 L118.016393,71.9052911 L10.6393443,71.9052911 L51.6229508,28.5329231 Z" id="Rectangle-45-Copy-2" opacity="0.8" fill="#28BCA9"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
