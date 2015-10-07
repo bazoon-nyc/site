@@ -33,17 +33,7 @@ input, textarea {
   margin: 75px 0 35px 0;
 }
 
-#section-five {
-  color: #444;
-}
-
-#section-five h4, h5{
-  font-weight: bold;
-}
-
-#section-seven h5 {
-  color: #555;
-}
+/*Section One*/
 
 .paragraph-one {
   font-size: 38px;
@@ -53,6 +43,8 @@ input, textarea {
   padding: 0 0 0 25px;
 }
 
+/*Section Two*/
+
 .paragraph-two {
   font-size: 24px;
   line-height: 34px;
@@ -61,15 +53,92 @@ input, textarea {
   padding: 0 0 0 25px;
 }
 
-.paragraph-three {
+/*Section Three*/
+
+#section-three h4 {
+  color: #FFFFFF;
   font-size: 22px;
   line-height: 27px;
-  margin: 0px 0 12px 0;
+  font-weight: bold;
 }
 
-.paragraph-four {
+.paragraph-three {
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 24px;
+  font-weight: bold;
+}
+
+/*Section Four*/
+
+.paragraph-four {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+  margin: 64px 0 64px 0;
+  padding: 0 0 0 25px;
+}
+
+/*Section Five */
+#section-five {
+  color: #444;
+}
+
+#section-five h4, h5{
+  font-weight: bold;
+}
+
+#section-five h4 {
+  color: #4A4A4A;
+  font-size: 24px;
+  line-hieght: 34px;
+}
+
+#section-five h5 {
+  color: #4A4A4A;
+  font-size: 22px;
+  line-height: 27px;
+
+}
+
+.paragraph-five {
+  color: #4A4A4A;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/*Section Six*/
+
+#section-six h4 {
+  color: #FFFFFF;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+.paragraph-six {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/*Section Seven*/
+#section-seven h5 {
+  color: #555;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: bold;
+}
+
+/*Section Eight*/
+
+#section-eight h1 {
+  text-color: #FFFFFF;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: lighter;
 }
 
 .logo {
@@ -172,10 +241,10 @@ input, textarea {
 
 .our-approach-graph {
   display: block;
-  width: 591px;
-  height: 494px;
+  width: 350px;
+  height: 340px;
   background: url(../images/Chart_OurApproach.svg);
-  background-size: 591px 494px;
+  background-size: 350px 340px;
 }
 
 .gradient {
