@@ -4,7 +4,7 @@
 # set +o xtrace (To revert to normal.)
 
 # Set registry and project name.
-REGISTRY="bazoon"
+REGISTRY="agolub"
 PROJECTNAME="bn"
 
 # This file sits in the config directory, set absolute path.

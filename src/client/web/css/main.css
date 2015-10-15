@@ -1,0 +1,291 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Custom styles.  Compile headers and row with SASS.
+   http://foundation.zurb.com/forum/posts/927-full-width-layouts
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6, p {
+    color: inherit;
+    font-weight: inherit;
+}
+
+.row {
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.column-wrap {
+    padding: 20px 0;
+}
+
+span.error,
+small.error {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: -1px;
+    padding: 0.375rem 0.5625rem 0.5625rem;
+    background: #971D09;
+    color: #FFFFFF;
+}
+
+.sub-nav dt.active a,
+.sub-nav dd.active a,
+.sub-nav dd.active a:active,
+.sub-nav dd.active a:hover,
+.sub-nav li.active a {
+    background: 0 none;
+    border-bottom: 4px solid #fff;
+    cursor: default;
+    font-weight: normal;
+    padding: 0.1875rem 1rem;
+}
+
+.row.header { background-image: linear-gradient( to right, #2C3351, #227188 ); }
+.row.header .sub-nav { margin: 15px 0; }
+.row.header .sub-nav a { color: #fff; color: #fff; display: block; border-radius: 0; }
+.row.header .sub-nav a:hover,
+.row.header .sub-nav a:active { border-bottom: 4px solid #fff; }
+
+.row.hero { background-image: linear-gradient( to right, #2C3351, #227188 ); }
+.row.hero p { font-size: 38px; line-height: 52px; font-weight: lighter; padding: 40px 0; }
+
+.row.blurb-row { }
+.row.blurb-row p { font-size: 24px; line-height: 34px; font-weight: bold; padding: 40px 0; }
+
+.row.green-row {
+    background-color: #16B19E;
+}
+
+.row.blue-row {
+    background-image: linear-gradient( to right, #2367AE, #3A9EE0 );
+}
+
+.row.strategy-row { background-color: #333333; font-weight: bold; }
+.row.strategy-row h4 { font-size: 25px; padding: 25px 0 0; }
+.row.strategy-row p { font-size: 16px; line-height: 24px; }
+.row.strategy-row img { height: 150px; width: auto; }
+
+.column-row-item { padding: 40px 0 10px; }
+
+.row.our-approach-row { font-weight: bold; }
+.row.our-approach-row h4 { font-size: 24px; }
+.row.our-approach-row h5 { font-size: 22px; }
+.row.our-approach-row p { font-size: 16px; }
+.row.our-approach-row .column-row-item { padding: 30px 0 0; }
+
+.row.about-us-row { background-image: linear-gradient( to right, #2C3351, #227188 ); font-weight: bold; }
+.row.about-us-row h4 { font-size: 24px; }
+
+.row.our-tools-row { font-weight: bold; }
+.row.our-tools-row h5 { font-size: 24px; line-height: 34px; }
+.our-tools-row img { padding: 15px; }
+
+.row.contact-us-row { background-color: black; }
+.row.contact-us-row h4 { font-size: 38px; line-height: 52px; font-weight: 300; }
+.row.contact-us-row input[type="text"],
+.row.contact-us-row textarea { background-color: #444; border: 1px solid #444; color: #fff; }
+
+#form-contact .row {
+    padding: 10px 0;
+}
+
+.row.footer {
+    background-color: #333;
+}
+.row.footer p { margin: 0; }
+
+.text-white {
+    color: #fff;
+}
+
+.text-gray-dark {
+    color: #555;
+}
+
+.text-gray {
+    color: #4A4A4A;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
