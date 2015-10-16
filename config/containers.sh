@@ -99,6 +99,7 @@ bn_run_webserver() {
     NAME=$PROJECTNAME-webserver
 
     docker run \
+        -v $ROOTDIR/src/client/web:/var/www \
         --link $PROJECTNAME-backend:backend \
         --volumes-from $PROJECTNAME-backend \
         --name $NAME \
