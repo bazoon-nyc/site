@@ -11,6 +11,12 @@
             "host": {
                 "sourcePath": "/var/app/current/src"
             }
+        },
+        {
+            "name": "client",
+            "host": {
+                "sourcePath": "/var/app/current/src/client/web"
+            }
         }
     ],
     "containerDefinitions": [
@@ -51,6 +57,10 @@
                 {
                     "sourceVolume": "src",
                     "containerPath": "/app"
+                },
+                {
+                    "sourceVolume": "client",
+                    "containerPath": "/var/www"
                 }
             ]
         }
