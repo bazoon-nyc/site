@@ -61,10 +61,16 @@ textarea {
    ========================================================================== */
 
 
+[data-magellan-expedition],
+[data-magellan-expedition-clone] {
+    background: 0 none;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     color: inherit;
     font-weight: inherit;
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 .sub-nav dt,
@@ -74,7 +80,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .column-wrap {
-    padding: 20px 0;
+    padding: 84px 0;
 }
 
 .column-row-item {
@@ -109,7 +115,7 @@ small.error {
 
 .row {
     max-width: 100%;
-    padding: 20px 0;
+    padding: 0;
 }
 
 .row.header { background-image: linear-gradient( to right, #2C3351, #227188 ); }
@@ -141,7 +147,7 @@ small.error {
 .row.our-approach-row h4 { font-size: 24px; }
 .row.our-approach-row h5 { font-size: 22px; }
 .row.our-approach-row p { font-size: 16px; }
-.row.our-approach-row .column-row-item { padding: 30px 0 0; }
+.row.our-approach-row .column-row-item { padding: 33px 0 0; }
 
 .row.about-us-row { background-image: linear-gradient( to right, #2C3351, #227188 ); font-weight: bold; }
 .row.about-us-row h4 { font-size: 24px; }
@@ -192,6 +198,15 @@ small.error {
     .row.our-approach-row h4 { font-size: 22px; }
     .row.our-approach-row h5 { font-size: 20px; }
     .row.our-approach-row p { font-size: 14px; }
+    .row.our-approach-row .column-row-item { padding: 20px 0 0; }
+
+    .column-wrap {
+        padding: 48px 0;
+    }
+
+    .mobile-top-padding-none {
+        padding-top: 0px;
+    }
 }
 
 @media only screen and (min-width: 35em) {}
