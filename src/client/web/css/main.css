@@ -60,6 +60,12 @@ textarea {
    http://foundation.zurb.com/forum/posts/927-full-width-layouts
    ========================================================================== */
 
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
 
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
@@ -152,9 +158,11 @@ small.error {
 .row.our-approach-row p { font-size: 16px; }
 .row.our-approach-row .column-row-item { padding: 33px 0 0; }
 
-.row.about-us-row { background-image: linear-gradient( to right, #2C3351, #227188 ); font-weight: bold; }
+.row.about-us-row { background-image: linear-gradient( to right, #2C3351, #227188 ); position: relative; }
 .row.about-us-row h4 { font-size: 24px; }
 .row.about-us-row .column-row-item { padding: 33px 0 0; }
+.row.about-us-row .bazoon-logo { position: absolute; right: 10%; top: 180px; }
+.row.about-us-row .bazoon-logo span { vertical-align: middle; display: table-cell; }
 
 .row.our-tools-row { font-weight: bold; }
 .row.our-tools-row h4 { font-size: 24px; font-weight: normal; line-height: 34px; }
