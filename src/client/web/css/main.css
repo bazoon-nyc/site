@@ -119,8 +119,10 @@ small.error {
 }
 
 .row.header { background-image: linear-gradient( to right, #2C3351, #227188 ); }
-.row.header .sub-nav { margin: 15px 0; }
-.row.header .sub-nav a { color: #fff; color: #fff; display: block; border-radius: 0; }
+.row.header h1 { padding: 25px 0; line-height: 0; }
+.row.header h1 img { width: 200px; }
+.row.header .sub-nav { margin: 18px 0; }
+.row.header .sub-nav a { color: #fff; color: #fff; display: block; border-radius: 0; font-size: 1rem; }
 .row.header .sub-nav a:hover,
 .row.header .sub-nav a:active { border-bottom: 4px solid #fff; }
 
