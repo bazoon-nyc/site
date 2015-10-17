@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
 html {
     color: #222;
     font-size: 1em;
@@ -56,9 +60,17 @@ textarea {
    http://foundation.zurb.com/forum/posts/927-full-width-layouts
    ========================================================================== */
 
+
 h1, h2, h3, h4, h5, h6, p {
     color: inherit;
     font-weight: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-nav dt,
+.sub-nav dd,
+.sub-nav li {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .column-wrap {
@@ -176,6 +188,10 @@ small.error {
     .row.header h1 img {
         width: 180px;
     }
+
+    .row.our-approach-row h4 { font-size: 22px; }
+    .row.our-approach-row h5 { font-size: 20px; }
+    .row.our-approach-row p { font-size: 14px; }
 }
 
 @media only screen and (min-width: 35em) {}
