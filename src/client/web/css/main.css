@@ -148,7 +148,7 @@ small.error {
 }
 
 .row.strategy-row { background-color: #333333; }
-.row.strategy-row h4 { font-size: 25px; padding: 25px 0 0; font-weight: bold; }
+.row.strategy-row h4 { font-size: 22px; padding: 33px 0 12px; }
 .row.strategy-row p { font-size: 16px; line-height: 24px; }
 .row.strategy-row img { height: 150px; width: auto; }
 
