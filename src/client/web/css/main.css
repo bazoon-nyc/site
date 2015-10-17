@@ -130,7 +130,7 @@ small.error {
 .row.hero p { font-size: 38px; line-height: 52px; font-weight: lighter; padding: 40px 0; }
 
 .row.blurb-row { }
-.row.blurb-row p { font-size: 24px; line-height: 34px; font-weight: bold; padding: 40px 0; }
+.row.blurb-row p { font-size: 24px; line-height: 34px; font-weight: bold; }
 
 .row.green-row {
     background-color: #16B19E;
@@ -201,6 +201,8 @@ small.error {
     .row.our-approach-row h5 { font-size: 20px; }
     .row.our-approach-row p { font-size: 14px; }
     .row.our-approach-row .column-row-item { padding: 20px 0 0; }
+
+    .row.blurb-row p { font-size: 18px;
 
     .column-wrap {
         padding: 48px 0;
