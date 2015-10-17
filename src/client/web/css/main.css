@@ -154,6 +154,7 @@ small.error {
 
 .row.about-us-row { background-image: linear-gradient( to right, #2C3351, #227188 ); font-weight: bold; }
 .row.about-us-row h4 { font-size: 24px; }
+.row.about-us-row .column-row-item { padding: 33px 0 0; }
 
 .row.our-tools-row { font-weight: bold; }
 .row.our-tools-row h5 { font-size: 24px; line-height: 34px; }
@@ -163,6 +164,7 @@ small.error {
 .row.contact-us-row input[type="text"],
 .row.contact-us-row textarea { background-color: #444; border: 1px solid #444; color: #fff; height: 48px; }
 .row.contact-us-row textarea { height: 150px; }
+.row.contact-us-row .column-row-item { padding: 33px 0 0; }
 
 .row.footer { background-color: #333; }
 .row.footer p { margin: 0; }
