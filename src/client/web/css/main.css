@@ -161,7 +161,8 @@ small.error {
 .row.contact-us-row { background-color: black; }
 .row.contact-us-row h4 { font-size: 38px; line-height: 52px; font-weight: 300; }
 .row.contact-us-row input[type="text"],
-.row.contact-us-row textarea { background-color: #444; border: 1px solid #444; color: #fff; }
+.row.contact-us-row textarea { background-color: #444; border: 1px solid #444; color: #fff; height: 48px; }
+.row.contact-us-row textarea { height: 150px; }
 
 .row.footer { background-color: #333; }
 .row.footer p { margin: 0; }
