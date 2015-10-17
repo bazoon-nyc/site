@@ -202,7 +202,7 @@ small.error {
     .row.our-approach-row p { font-size: 14px; }
     .row.our-approach-row .column-row-item { padding: 20px 0 0; }
 
-    .row.blurb-row p { font-size: 18px;
+    .row.blurb-row p { font-size: 18px; line-height: 24px; }
 
     .column-wrap {
         padding: 48px 0;
