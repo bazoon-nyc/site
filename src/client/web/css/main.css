@@ -127,7 +127,8 @@ small.error {
 .row.header .sub-nav a:active { border-bottom: 4px solid #fff; }
 
 .row.hero { background-image: linear-gradient( to right, #2C3351, #227188 ); }
-.row.hero p { font-size: 38px; line-height: 52px; font-weight: lighter; padding: 40px 0; }
+.row.hero p { font-size: 38px; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    line-height: 52px; font-weight: lighter; }
 
 .row.blurb-row { }
 .row.blurb-row p { font-size: 24px; line-height: 34px; font-weight: bold; }
@@ -193,6 +194,16 @@ small.error {
 
 /* max-width 640px, mobile-only. */
 @media only screen and (max-width: 40em) {
+    .row.hero p {
+        font-size: 1.375rem;
+        line-height: 2.125rem;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+    .row.hero .column-wrap {
+        padding-top: 43px;
+    }
+
     .row.header h1 img {
         width: 180px;
     }
