@@ -157,7 +157,8 @@ small.error {
 .row.about-us-row .column-row-item { padding: 33px 0 0; }
 
 .row.our-tools-row { font-weight: bold; }
-.row.our-tools-row h5 { font-size: 24px; line-height: 34px; }
+.row.our-tools-row h4 { font-size: 24px; font-weight: normal; line-height: 34px; }
+.our-tools-row img { padding: 15px; }
 
 .row.contact-us-row { background-color: black; }
 .row.contact-us-row h4 { font-size: 38px; line-height: 52px; font-weight: 300; }
@@ -168,10 +169,6 @@ small.error {
 
 .row.footer { background-color: #333; }
 .row.footer p { margin: 0; }
-
-.our-tools-row img {
-    padding: 15px;
-}
 
 .text-white {
     color: #fff;
