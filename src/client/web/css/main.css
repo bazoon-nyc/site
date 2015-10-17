@@ -156,6 +156,7 @@ small.error {
 .row.our-approach-row h4 { font-size: 24px; }
 .row.our-approach-row h5 { font-size: 22px; }
 .row.our-approach-row p { font-size: 16px; }
+.row.our-approach-row img { padding-left: 10px; }
 .row.our-approach-row .column-row-item { padding: 33px 0 0; }
 
 .row.about-us-row { background-image: linear-gradient( to right, #2C3351, #227188 ); position: relative; }
@@ -219,6 +220,7 @@ small.error {
     .row.our-approach-row h4 { font-size: 22px; }
     .row.our-approach-row h5 { font-size: 20px; }
     .row.our-approach-row p { font-size: 14px; }
+    .row.our-approach-row img { padding: 0; }
     .row.our-approach-row .column-row-item { padding: 20px 0 0; }
 
     .row.blurb-row p { font-size: 18px; line-height: 24px; }
