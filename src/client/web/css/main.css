@@ -176,8 +176,13 @@ small.error {
 .row.contact-us-row textarea { height: 150px; }
 .row.contact-us-row .column-row-item { padding: 33px 0 0; }
 
-.row.footer { background-color: #333; }
+.row.footer { padding: 30px 0; background-color: #333; }
 .row.footer p { margin: 0; }
+.row.footer ul { list-style-type: none; margin: 0; padding: 0; }
+.row.footer ul li { display: inline-block; margin: 0 15px; }
+.row.footer ul li a,
+.row.footer ul li a:active,
+.row.footer ul li a:hover { color: #A19E9E; text-decoration: none; }
 
 #form-contact-success-prompt {
     margin: 30px 0 0;
