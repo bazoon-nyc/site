@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.views.decorators.csrf import csrf_exempt
 
 from rest_framework import status
 from rest_framework import generics
@@ -21,7 +20,6 @@ class MessageList(APIView):
 
         return Response(data=serializer.data, status=status.HTTP_200_OK)
 
-    @csrf_protect
     def post(self, request, format=None):
         serializer = MessageSerializer(data=request.data)
 
