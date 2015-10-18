@@ -167,7 +167,7 @@ small.error {
 
 .row.our-tools-row { font-weight: bold; }
 .row.our-tools-row h4 { font-size: 24px; font-weight: normal; line-height: 34px; }
-.our-tools-row img { padding: 15px; }
+.our-tools-row img { max-width: 250px; padding: 15px; }
 
 .row.contact-us-row { background-color: black; }
 .row.contact-us-row h4 { font-size: 38px; line-height: 52px; font-weight: 300; }
