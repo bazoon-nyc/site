@@ -210,6 +210,8 @@ small.error {
 
 @media only screen {}
 
+@media only screen and (min-width: 35em) {}
+
 /* max-width 640px, mobile-only. */
 @media only screen and (max-width: 40em) {
     .row.hero p {
@@ -251,7 +253,28 @@ small.error {
     .row.footer ul li { display: block; margin: 0; }
 }
 
-@media only screen and (min-width: 35em) {}
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) {
+    .row.footer ul li { margin: 0 5px; }
+}
+
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { }
+
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 64.063em) { }
+
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { }
+
+/* min-width 1441px, xlarge screens */
+@media only screen and (min-width: 90.063em) { }
+
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) { }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
