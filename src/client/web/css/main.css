@@ -245,6 +245,10 @@ small.error {
     .mobile-top-padding-none {
         padding-top: 0px;
     }
+
+    .row.footer p { margin: 0 0 15px; }
+    .row.footer ul { display: block; text-align: left; }
+    .row.footer ul li { display: block; margin: 0; }
 }
 
 @media only screen and (min-width: 35em) {}
