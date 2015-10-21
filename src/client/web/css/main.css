@@ -119,18 +119,7 @@ small.error {
     padding: 10px 0;
 }
 
-.row {
-    max-width: 100%;
-    padding: 0;
-}
-
-.row.header { background-image: linear-gradient( to right, #2C3351, #227188 ); }
-.row.header h1 { padding: 25px 0; line-height: 0; }
-.row.header h1 img { width: 200px; }
-.row.header .sub-nav { margin: 18px 0; }
-.row.header .sub-nav a { color: #fff; color: #fff; display: block; border-radius: 0; font-size: 1rem; text-transform: capitalize; }
-.row.header .sub-nav a:hover,
-.row.header .sub-nav a:active { border-bottom: 4px solid #fff; }
+.row { max-width: 100%; padding: 0; }
 
 .row.hero { background-image: linear-gradient( to right, #2C3351, #227188 ); }
 .row.hero p { font-size: 38px; font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -140,13 +129,8 @@ small.error {
 .row.blurb-row { }
 .row.blurb-row p { font-size: 24px; line-height: 34px; }
 
-.row.green-row {
-    background-color: #16B19E;
-}
-
-.row.blue-row {
-    background-image: linear-gradient( to right, #2367AE, #3A9EE0 );
-}
+.row.green-row { background-color: #16B19E; }
+.row.blue-row { background-image: linear-gradient( to right, #2367AE, #3A9EE0 ); }
 
 .row.strategy-row { background-color: #333333; }
 .row.strategy-row h4 { font-size: 22px; padding: 33px 0 12px; }
@@ -200,6 +184,11 @@ small.error {
     color: #4A4A4A;
 }
 
+ul.header-nav { list-style-type: none; margin: 22px 0; }
+ul.header-nav li { display: inline-block; }
+ul.header-nav li a { color: #fff; margin: 0 15px; text-transform: capitalize; padding: 5px; }
+ul.header-nav li.active a { border-bottom: 3px solid #fff; }
+
 
 
 /* ==========================================================================
@@ -211,14 +200,42 @@ small.error {
 .top-bar.expanded .toggle-topbar a { color: #fff; }
 .top-bar.expanded .toggle-topbar a span::after { box-shadow: 0 0 0 1px #ffffff, 0 7px 0 1px #ffffff, 0 14px 0 1px #ffffff; }
 
-.top-bar-section ul li { background: transparent; }
-.top-bar-section ul li:hover:not(.has-form) > a { background-color: transparent; background: transparent; }
+.contain-to-grid {
+    width: 100%;
+    background: linear-gradient( to right, #2C3351, #227188 );
+}
+
+.top-bar.expanded {
+    background: linear-gradient( to right, #2C3351, #227188 );
+    height: auto;
+}
+
+.top-bar .name {
+    margin: 10px 20px;
+}
+
+[data-magellan-expedition],
+[data-magellan-expedition-clone] {
+    background: linear-gradient( to right, #2C3351, #227188 );
+    min-width: 100%;
+    padding: 0;
+    z-index: 50;
+    height: 65px;
+}
+
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+    padding: 0;
+}
+
+.title-area li.name h1 a img {
+    width: 150px;
+}
+
+
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-/* TODO: Customize Foundation with SASS and compile. */
 
 @media only screen {}
 
@@ -228,11 +245,6 @@ small.error {
 @media only screen and (max-width: 40em) {
     .row.hero p { font-size: 1.375rem; line-height: 2.125rem; font-weight: 200; letter-spacing: 1px; }
     .row.hero .column-wrap { padding: 60px 0 110px; }
-
-    .row.header h1 img {
-        width: 180px;
-        margin: 10px 0 0 15px;
-    }
 
     .row.our-approach-row h4 { font-size: 22px; }
     .row.our-approach-row h5 { font-size: 20px; }
@@ -258,18 +270,9 @@ small.error {
     .row.footer ul { display: block; text-align: left; }
     .row.footer ul li { display: block; margin: 0; }
 
-    .top-bar-section ul {
-        margin: 0 18px;
-        width: initial;
-    }
-
-    .top-bar-section ul li > a {
-        padding: 10px 0 5px 15px;
-        display: block;
-        border-radius: 0;
-        font-size: 1rem;
-        text-transform: capitalize;
-    }
+    ul.header-nav.right { text-align: center; float: none !important; }
+    ul.header-nav li { display: inherit; margin: 10px 0; }
+    ul.header-nav li a { padding: 5px 0; }
 }
 
 /* min-width 641px, medium screens */
@@ -281,18 +284,7 @@ small.error {
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { }
 
 /* min-width 1025px, large screens */
-@media only screen and (min-width: 64.063em) {
-    /* This can be deleted once we test everything.
-    .top-bar { overflow: hidden; line-height: 2.8125rem; position: relative; background: #333; margin-bottom: 0; }
-    .top-bar .toggle-topbar.menu-icon { top: 50%; margin-top: -16px; display: block; }
-    .top-bar .title-area { float: none; }
-
-    .top-bar-section ul li>a { display: block; float: none; }
-    .top-bar-section { left: 0; position: relative; width: auto; transition: left 300ms ease-out; }
-    .top-bar-section ul { padding: 0; width: 100%; height: auto; display: block; font-size: 16px; margin: 0; }
-    .top-bar-section ul li { float: none; }
-    */
-}
+@media only screen and (min-width: 64.063em) { }
 
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { }
@@ -317,16 +309,16 @@ small.error {
    Helper classes
    ========================================================================== */
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; 
     overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0;
     overflow: visible; position: static; width: auto; }
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
 
 .invisible {
     visibility: hidden;
