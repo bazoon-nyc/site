@@ -66,7 +66,10 @@ body {
     min-height: 100%;
     position: relative;
 }
-
+/* fixed nav with css body shift */
+body {
+    padding-top: 65px;
+}
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
     background: 0 none;
@@ -184,7 +187,7 @@ small.error {
     color: #4A4A4A;
 }
 
-ul.header-nav { list-style-type: none; margin: 22px 0; }
+ul.header-nav { list-style-type: none; margin: 10px 0 22px; }
 ul.header-nav li { display: inline-block; }
 ul.header-nav li a { color: #fff; margin: 0 15px; text-transform: capitalize; padding: 5px; }
 ul.header-nav li.active a { border-bottom: 3px solid #fff; }
@@ -195,7 +198,15 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
    Foundation overrides.
    ========================================================================== */
 
-.top-bar { background: transparent; }
+.top-bar { 
+    background: transparent; 
+    height: 65px;
+    line-height: 65px;
+}
+.top-bar.expanded {
+    background: linear-gradient( to right, #2C3351, #227188 );
+    height: auto;
+}
 .top-bar.expanded .title-area { background: transparent; }
 .top-bar.expanded .toggle-topbar a { color: #fff; }
 .top-bar.expanded .toggle-topbar a span::after { box-shadow: 0 0 0 1px #ffffff, 0 7px 0 1px #ffffff, 0 14px 0 1px #ffffff; }
@@ -204,34 +215,44 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
     width: 100%;
     background: linear-gradient( to right, #2C3351, #227188 );
 }
-
-.top-bar.expanded {
-    background: linear-gradient( to right, #2C3351, #227188 );
-    height: auto;
-}
-
 .top-bar .name {
-    margin: 10px 20px;
-}
-
-[data-magellan-expedition],
-[data-magellan-expedition-clone] {
-    background: linear-gradient( to right, #2C3351, #227188 );
-    min-width: 100%;
-    padding: 0;
-    z-index: 50;
     height: 65px;
 }
-
+.top-bar .name h1 {
+    line-height: 65px;
+}
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
     padding: 0;
 }
-
+.top-bar .title-area {
+    padding-left: 20px;
+}
 .title-area li.name h1 a img {
     width: 150px;
 }
+[data-magellan-expedition],
+[data-magellan-expedition-clone] {
+    background: none;
+    min-width: initial;
+    padding: 0;
+}
 
+/* ==== full with top bar ==== */
+/*.contain-to-grid .top-bar {
+    max-width: 100%;
+}*/
 
+/* ==== site content width top bar ==== */
+@media only screen and (min-width: 40.0625em) {
+    .contain-to-grid .top-bar {
+        max-width: 91.66667%;
+    }
+}
+@media only screen and (min-width: 64.063em) { 
+    .contain-to-grid .top-bar {
+        max-width: 75%;
+    }
+}
 
 /* ==========================================================================
    Media Queries
@@ -278,6 +299,12 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
     .row.footer ul li { margin: 0 5px; }
+    ul.header-nav li a {
+        line-height: 65px;
+    }
+    ul.header-nav {
+        margin: 0;
+    }
 }
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
@@ -337,7 +364,11 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
 
-
+.fixed-top {
+    position: fixed; 
+    top: 0;
+    z-index: 9; 
+}
 
 /* ==========================================================================
    Print styles
