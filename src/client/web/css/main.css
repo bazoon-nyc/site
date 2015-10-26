@@ -305,6 +305,11 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
     ul.header-nav {
         margin: 0;
     }
+    /* contact us section fit to screen height */
+    .row.contact-us-row {
+        height: 100vh;
+    }
+
 }
 
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
