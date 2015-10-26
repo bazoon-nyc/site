@@ -11,12 +11,22 @@ $(document).foundation({
     }
 });
 
-// destination_threshold - pixels from the top of destination for it to be considered active
-// calculate destination_threshold depends on screen width
+
+var resizeHashTimer, resizeThresholdTimer;
 $(window).resize(function() {
+    // scroll to anchor on window resize 
+    clearTimeout(resizeHashTimer);
+    resizeHashTimer = setTimeout(function() {
+        if (window.location.hash !== "") {
+          $('a[href="' + window.location.hash + '"]').trigger('click');      
+        }
+    }, 100);
+    // destination_threshold - pixels from the top of destination for it to be considered active
+    // calculate destination_threshold depends on screen width
     // Foundatation @media only screen and (min-width: 40.063em)
     if ($(window).width() >= 641) {
-        setTimeout(function() {
+        clearTimeout(resizeThresholdTimer);
+        resizeThresholdTimer = setTimeout(function() {
             $(document).foundation({
                 "magellan-expedition": {
                     destination_threshold: 20,
@@ -25,7 +35,8 @@ $(window).resize(function() {
         }, 100);
     } else {
     // mobile
-        setTimeout(function() {
+        clearTimeout(resizeThresholdTimer);
+        resizeThresholdTimer = setTimeout(function() {
             $(document).foundation({
                 "magellan-expedition": {
                     destination_threshold: 100,
