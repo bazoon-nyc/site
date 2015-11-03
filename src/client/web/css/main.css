@@ -66,10 +66,12 @@ body {
     min-height: 100%;
     position: relative;
 }
+
 /* fixed nav with css body shift */
 body {
     padding-top: 65px;
 }
+
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
     background: 0 none;
@@ -198,15 +200,8 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
    Foundation overrides.
    ========================================================================== */
 
-.top-bar { 
-    background: transparent; 
-    height: 65px;
-    line-height: 65px;
-}
-.top-bar.expanded {
-    background: linear-gradient( to right, #2C3351, #227188 );
-    height: auto;
-}
+.top-bar { background: transparent;  height: 65px; line-height: 65px; }
+.top-bar.expanded { background: linear-gradient( to right, #2C3351, #227188 ); height: auto; }
 .top-bar.expanded .title-area { background: transparent; }
 .top-bar.expanded .toggle-topbar a { color: #fff; }
 .top-bar.expanded .toggle-topbar a span::after { box-shadow: 0 0 0 1px #ffffff, 0 7px 0 1px #ffffff, 0 14px 0 1px #ffffff; }
@@ -215,21 +210,21 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
     width: 100%;
     background: linear-gradient( to right, #2C3351, #227188 );
 }
-.top-bar .name {
-    height: 65px;
-}
-.top-bar .name h1 {
-    line-height: 65px;
-}
-.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
-    padding: 0;
-}
-.top-bar .title-area {
-    padding-left: 20px;
-}
+
+.top-bar .name { height: 65px; }
+.top-bar .name h1 { line-height: 65px; }
+.top-bar .name h1 a,
+.top-bar .name h2 a,
+.top-bar .name h3 a,
+.top-bar .name h4 a,
+.top-bar .name p a,
+.top-bar .name span a { padding: 0; }
+.top-bar .title-area { padding-left: 20px; }
+
 .title-area li.name h1 a img {
     width: 150px;
 }
+
 [data-magellan-expedition],
 [data-magellan-expedition-clone] {
     background: none;
@@ -248,6 +243,7 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
         max-width: 91.66667%;
     }
 }
+
 @media only screen and (min-width: 64.063em) { 
     .contain-to-grid .top-bar {
         max-width: 75%;
@@ -298,20 +294,21 @@ ul.header-nav li.active a { border-bottom: 3px solid #fff; }
 
 /* min-width 641px, medium screens */
 @media only screen and (min-width: 40.063em) {
-    .row.footer ul li { margin: 0 5px; }
-    ul.header-nav li a {
-        line-height: 65px;
+    .row.footer ul li {
+        margin: 0 5px;
     }
-    ul.header-nav {
-        margin: 0;
-    }
+
+    ul.header-nav li a { line-height: 65px; }
+    ul.header-nav { margin: 0; }
 }
+
 /* contact us section fits to screen height */
 @media only screen and (min-width: 40.063em) and (min-height: 650px) {
     .row.contact-us-row {
         height: 100vh;
     }
 }
+
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { }
 
