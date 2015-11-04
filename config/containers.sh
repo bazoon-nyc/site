@@ -127,7 +127,7 @@ build() {
     sed -i '' 's/'"$3"'/FROM_IMAGE/g' $CONFDIR/$1/Dockerfile
 }
 
-# Stop and remove all videowall containers.
+# Stop and remove all containers.
 stop_remove_all() {
     stop_remove $PROJECTNAME-base
 

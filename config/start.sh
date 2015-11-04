@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SCRIPTPATH=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-PROJECTNAME="videowall"
+PROJECTNAME="bn"
 
 source $SCRIPTPATH/containers.sh
 source $SCRIPTPATH/utils.sh
