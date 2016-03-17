@@ -1,68 +1,63 @@
-
 {
     "AWSEBDockerrunVersion": 2,
     "Authentication": {
         "Bucket": "bzn-docker-images",
         "Key": "keys/.dockercfg"
     },
-    "volumes": [
-        {
-            "name": "src",
-            "host": {
-                "sourcePath": "/var/app/current/src"
-            }
-        },
-        {
-            "name": "client",
-            "host": {
-                "sourcePath": "/var/app/current/src/client/web"
-            }
+    "volumes": [{
+        "name": "src",
+        "host": {
+            "sourcePath": "/var/app/current/src"
         }
-    ],
-    "containerDefinitions": [
-        {
-            "name": "bn-backend",
-            "image": "agolub/bn-backend:latest",
-            "essential": true,
-            "memory": 128,
-            "portMappings": [
-                {
-                    "hostPort": 9000,
-                    "containerPort": 9000
-                }
-            ],
-            "links": [],
-            "mountPoints": [
-                {
-                    "sourceVolume": "src",
-                    "containerPath": "/app"
-                }
-            ]
-        },
-        {
-            "name": "bn-webserver",
-            "image": "agolub/bn-webserver:latest",
-            "essential": true,
-            "memory": 128,
-            "portMappings": [
-                {
-                    "hostPort": 80,
-                    "containerPort": 80
-                }
-            ],
-            "links": [
-                "bn-backend:backend"
-            ],
-            "mountPoints": [
-                {
-                    "sourceVolume": "src",
-                    "containerPath": "/app"
-                },
-                {
-                    "sourceVolume": "client",
-                    "containerPath": "/var/www"
-                }
-            ]
+    }, {
+        "name": "client",
+        "host": {
+            "sourcePath": "/var/app/current/src/client/web"
         }
-    ]
+    }],
+    "containerDefinitions": [{
+        "name": "postgres",
+        "image": "postgres",
+        "essential": true,
+        "memory": 128,
+        "environment": [{
+            "name": "POSTGRES_PASSWORD",
+            "value": "postgres"
+        }]
+    }, {
+        "name": "bn-backend",
+        "image": "agolub/bn-backend:latest",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [{
+            "hostPort": 9000,
+            "containerPort": 9000
+        }],
+        "links": [
+            "postgres"
+        ],
+        "mountPoints": [{
+            "sourceVolume": "src",
+            "containerPath": "/app"
+        }]
+    }, {
+        "name": "bn-webserver",
+        "image": "agolub/bn-webserver:latest",
+        "essential": true,
+        "memory": 128,
+        "portMappings": [{
+            "hostPort": 80,
+            "containerPort": 80
+        }],
+        "links": [
+            "bn-backend:backend"
+        ],
+        "mountPoints": [{
+            "sourceVolume": "src",
+            "containerPath": "/app"
+        }, {
+            "sourceVolume": "client",
+            "containerPath": "/var/www"
+        }]
+    }]
 }
